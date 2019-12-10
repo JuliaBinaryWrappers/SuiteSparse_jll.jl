@@ -1,0 +1,9 @@
+[[SuiteSparse]]
+arch = "armv7l"
+git-tree-sha1 = "0fae18fa80161e4d5fe9137747ca4f0f1dec96b9"
+libc = "glibc"
+os = "linux"
+
+    [[SuiteSparse.download]]
+    sha256 = "b8f8e8ebb2aa57bd664205c74a16a21f7519ac5f028ceab9aed7cb618b08bc34"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v5.4.0+0/SuiteSparse.v5.4.0.arm-linux-gnueabihf.tar.gz"
