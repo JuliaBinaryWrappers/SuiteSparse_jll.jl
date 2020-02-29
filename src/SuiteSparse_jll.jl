@@ -34,7 +34,7 @@ artifacts = Pkg.Artifacts.load_artifacts_toml(artifacts_toml; pkg_uuid=UUID("bea
 platforms = [Pkg.Artifacts.unpack_platform(e, "SuiteSparse", artifacts_toml) for e in artifacts["SuiteSparse"]]
 
 # Filter platforms based on what wrappers we've generated on-disk
-platforms = filter(p -> isfile(joinpath(@__DIR__, "wrappers", triplet(p) * ".jl")), platforms)
+filter!(p -> isfile(joinpath(@__DIR__, "wrappers", replace(triplet(p), "arm-" => "armv7l-") * ".jl")), platforms)
 
 # From the available options, choose the best platform
 best_platform = select_platform(Dict(p => triplet(p) for p in platforms))
