@@ -2,304 +2,99 @@
 export libamd, libbtf, libcamd, libccolamd, libcholmod, libcolamd, libklu, libldl, librbio, libspqr, libsuitesparse_wrapper, libsuitesparseconfig, libumfpack
 
 using OpenBLAS_jll
-## Global variables
-PATH = ""
-LIBPATH = ""
-LIBPATH_env = "PATH"
-LIBPATH_default = ""
-
-# Relative path to `libamd`
-const libamd_splitpath = ["bin", "libamd.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libamd_path = ""
-
-# libamd-specific global declaration
-# This will be filled out by __init__()
-libamd_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libamd = "libamd.dll"
-
-
-# Relative path to `libbtf`
-const libbtf_splitpath = ["bin", "libbtf.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libbtf_path = ""
-
-# libbtf-specific global declaration
-# This will be filled out by __init__()
-libbtf_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libbtf = "libbtf.dll"
-
-
-# Relative path to `libcamd`
-const libcamd_splitpath = ["bin", "libcamd.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libcamd_path = ""
-
-# libcamd-specific global declaration
-# This will be filled out by __init__()
-libcamd_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libcamd = "libcamd.dll"
-
-
-# Relative path to `libccolamd`
-const libccolamd_splitpath = ["bin", "libccolamd.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libccolamd_path = ""
-
-# libccolamd-specific global declaration
-# This will be filled out by __init__()
-libccolamd_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libccolamd = "libccolamd.dll"
-
-
-# Relative path to `libcholmod`
-const libcholmod_splitpath = ["bin", "libcholmod.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libcholmod_path = ""
-
-# libcholmod-specific global declaration
-# This will be filled out by __init__()
-libcholmod_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libcholmod = "libcholmod.dll"
-
-
-# Relative path to `libcolamd`
-const libcolamd_splitpath = ["bin", "libcolamd.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libcolamd_path = ""
-
-# libcolamd-specific global declaration
-# This will be filled out by __init__()
-libcolamd_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libcolamd = "libcolamd.dll"
-
-
-# Relative path to `libklu`
-const libklu_splitpath = ["bin", "libklu.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libklu_path = ""
-
-# libklu-specific global declaration
-# This will be filled out by __init__()
-libklu_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libklu = "libklu.dll"
-
-
-# Relative path to `libldl`
-const libldl_splitpath = ["bin", "libldl.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libldl_path = ""
-
-# libldl-specific global declaration
-# This will be filled out by __init__()
-libldl_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libldl = "libldl.dll"
-
-
-# Relative path to `librbio`
-const librbio_splitpath = ["bin", "librbio.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-librbio_path = ""
-
-# librbio-specific global declaration
-# This will be filled out by __init__()
-librbio_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const librbio = "librbio.dll"
-
-
-# Relative path to `libspqr`
-const libspqr_splitpath = ["bin", "libspqr.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libspqr_path = ""
-
-# libspqr-specific global declaration
-# This will be filled out by __init__()
-libspqr_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libspqr = "libspqr.dll"
-
-
-# Relative path to `libsuitesparse_wrapper`
-const libsuitesparse_wrapper_splitpath = ["bin", "libsuitesparse_wrapper.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libsuitesparse_wrapper_path = ""
-
-# libsuitesparse_wrapper-specific global declaration
-# This will be filled out by __init__()
-libsuitesparse_wrapper_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libsuitesparse_wrapper = "libsuitesparse_wrapper.dll"
-
-
-# Relative path to `libsuitesparseconfig`
-const libsuitesparseconfig_splitpath = ["bin", "libsuitesparseconfig.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libsuitesparseconfig_path = ""
-
-# libsuitesparseconfig-specific global declaration
-# This will be filled out by __init__()
-libsuitesparseconfig_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libsuitesparseconfig = "libsuitesparseconfig.dll"
-
-
-# Relative path to `libumfpack`
-const libumfpack_splitpath = ["bin", "libumfpack.dll"]
-
-# This will be filled out by __init__() for all products, as it must be done at runtime
-libumfpack_path = ""
-
-# libumfpack-specific global declaration
-# This will be filled out by __init__()
-libumfpack_handle = C_NULL
-
-# This must be `const` so that we can use it with `ccall()`
-const libumfpack = "libumfpack.dll"
-
-
-"""
-Open all libraries
-"""
+JLLWrappers.@generate_wrapper_header("SuiteSparse")
+JLLWrappers.@declare_library_product(libamd, "libamd.dll")
+JLLWrappers.@declare_library_product(libbtf, "libbtf.dll")
+JLLWrappers.@declare_library_product(libcamd, "libcamd.dll")
+JLLWrappers.@declare_library_product(libccolamd, "libccolamd.dll")
+JLLWrappers.@declare_library_product(libcholmod, "libcholmod.dll")
+JLLWrappers.@declare_library_product(libcolamd, "libcolamd.dll")
+JLLWrappers.@declare_library_product(libklu, "libklu.dll")
+JLLWrappers.@declare_library_product(libldl, "libldl.dll")
+JLLWrappers.@declare_library_product(librbio, "librbio.dll")
+JLLWrappers.@declare_library_product(libspqr, "libspqr.dll")
+JLLWrappers.@declare_library_product(libsuitesparse_wrapper, "libsuitesparse_wrapper.dll")
+JLLWrappers.@declare_library_product(libsuitesparseconfig, "libsuitesparseconfig.dll")
+JLLWrappers.@declare_library_product(libumfpack, "libumfpack.dll")
 function __init__()
-    global artifact_dir = abspath(artifact"SuiteSparse")
+    JLLWrappers.@generate_init_header(OpenBLAS_jll)
+    JLLWrappers.@init_library_product(
+        libamd,
+        "bin\\libamd.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    # Initialize PATH and LIBPATH environment variable listings
-    global PATH_list, LIBPATH_list
-    # From the list of our dependencies, generate a tuple of all the PATH and LIBPATH lists,
-    # then append them to our own.
-    foreach(p -> append!(PATH_list, p), (OpenBLAS_jll.PATH_list,))
-    foreach(p -> append!(LIBPATH_list, p), (OpenBLAS_jll.LIBPATH_list,))
+    JLLWrappers.@init_library_product(
+        libbtf,
+        "bin\\libbtf.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    global libamd_path = normpath(joinpath(artifact_dir, libamd_splitpath...))
+    JLLWrappers.@init_library_product(
+        libcamd,
+        "bin\\libcamd.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libamd_handle = dlopen(libamd_path)
-    push!(LIBPATH_list, dirname(libamd_path))
+    JLLWrappers.@init_library_product(
+        libccolamd,
+        "bin\\libccolamd.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    global libbtf_path = normpath(joinpath(artifact_dir, libbtf_splitpath...))
+    JLLWrappers.@init_library_product(
+        libcholmod,
+        "bin\\libcholmod.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libbtf_handle = dlopen(libbtf_path)
-    push!(LIBPATH_list, dirname(libbtf_path))
+    JLLWrappers.@init_library_product(
+        libcolamd,
+        "bin\\libcolamd.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    global libcamd_path = normpath(joinpath(artifact_dir, libcamd_splitpath...))
+    JLLWrappers.@init_library_product(
+        libklu,
+        "bin\\libklu.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libcamd_handle = dlopen(libcamd_path)
-    push!(LIBPATH_list, dirname(libcamd_path))
+    JLLWrappers.@init_library_product(
+        libldl,
+        "bin\\libldl.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    global libccolamd_path = normpath(joinpath(artifact_dir, libccolamd_splitpath...))
+    JLLWrappers.@init_library_product(
+        librbio,
+        "bin\\librbio.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libccolamd_handle = dlopen(libccolamd_path)
-    push!(LIBPATH_list, dirname(libccolamd_path))
+    JLLWrappers.@init_library_product(
+        libspqr,
+        "bin\\libspqr.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    global libcholmod_path = normpath(joinpath(artifact_dir, libcholmod_splitpath...))
+    JLLWrappers.@init_library_product(
+        libsuitesparse_wrapper,
+        "bin\\libsuitesparse_wrapper.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libcholmod_handle = dlopen(libcholmod_path)
-    push!(LIBPATH_list, dirname(libcholmod_path))
+    JLLWrappers.@init_library_product(
+        libsuitesparseconfig,
+        "bin\\libsuitesparseconfig.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    global libcolamd_path = normpath(joinpath(artifact_dir, libcolamd_splitpath...))
+    JLLWrappers.@init_library_product(
+        libumfpack,
+        "bin\\libumfpack.dll",
+        RTLD_LAZY | RTLD_DEEPBIND,
+    )
 
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libcolamd_handle = dlopen(libcolamd_path)
-    push!(LIBPATH_list, dirname(libcolamd_path))
-
-    global libklu_path = normpath(joinpath(artifact_dir, libklu_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libklu_handle = dlopen(libklu_path)
-    push!(LIBPATH_list, dirname(libklu_path))
-
-    global libldl_path = normpath(joinpath(artifact_dir, libldl_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libldl_handle = dlopen(libldl_path)
-    push!(LIBPATH_list, dirname(libldl_path))
-
-    global librbio_path = normpath(joinpath(artifact_dir, librbio_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global librbio_handle = dlopen(librbio_path)
-    push!(LIBPATH_list, dirname(librbio_path))
-
-    global libspqr_path = normpath(joinpath(artifact_dir, libspqr_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libspqr_handle = dlopen(libspqr_path)
-    push!(LIBPATH_list, dirname(libspqr_path))
-
-    global libsuitesparse_wrapper_path = normpath(joinpath(artifact_dir, libsuitesparse_wrapper_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libsuitesparse_wrapper_handle = dlopen(libsuitesparse_wrapper_path)
-    push!(LIBPATH_list, dirname(libsuitesparse_wrapper_path))
-
-    global libsuitesparseconfig_path = normpath(joinpath(artifact_dir, libsuitesparseconfig_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libsuitesparseconfig_handle = dlopen(libsuitesparseconfig_path)
-    push!(LIBPATH_list, dirname(libsuitesparseconfig_path))
-
-    global libumfpack_path = normpath(joinpath(artifact_dir, libumfpack_splitpath...))
-
-    # Manually `dlopen()` this right now so that future invocations
-    # of `ccall` with its `SONAME` will find this path immediately.
-    global libumfpack_handle = dlopen(libumfpack_path)
-    push!(LIBPATH_list, dirname(libumfpack_path))
-
-    # Filter out duplicate and empty entries in our PATH and LIBPATH entries
-    filter!(!isempty, unique!(PATH_list))
-    filter!(!isempty, unique!(LIBPATH_list))
-    global PATH = join(PATH_list, ';')
-    global LIBPATH = join(vcat(LIBPATH_list, [Sys.BINDIR, joinpath(Sys.BINDIR, Base.LIBDIR, "julia"), joinpath(Sys.BINDIR, Base.LIBDIR)]), ';')
-
-    
+    JLLWrappers.@generate_init_footer()
 end  # __init__()
-
