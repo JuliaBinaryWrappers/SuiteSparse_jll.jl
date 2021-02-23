@@ -36,7 +36,7 @@ The tarballs for `SuiteSparse_jll.jl` have been built from these sources:
 
 The following JLL packages are required by `SuiteSparse_jll.jl`:
 
-* `libblastrampoline_jll)`
+* `OpenBLAS_jll)`
 
 ## Products
 
