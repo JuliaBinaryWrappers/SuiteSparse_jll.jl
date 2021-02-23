@@ -3,19 +3,19 @@ export libamd, libbtf, libcamd, libccolamd, libcholmod, libcolamd, libklu, libld
 
 using libblastrampoline_jll
 JLLWrappers.@generate_wrapper_header("SuiteSparse")
-JLLWrappers.@declare_library_product(libamd, "@rpath/libamd.2.dylib")
-JLLWrappers.@declare_library_product(libbtf, "@rpath/libbtf.1.dylib")
-JLLWrappers.@declare_library_product(libcamd, "@rpath/libcamd.2.dylib")
-JLLWrappers.@declare_library_product(libccolamd, "@rpath/libccolamd.2.dylib")
-JLLWrappers.@declare_library_product(libcholmod, "@rpath/libcholmod.3.dylib")
-JLLWrappers.@declare_library_product(libcolamd, "@rpath/libcolamd.2.dylib")
-JLLWrappers.@declare_library_product(libklu, "@rpath/libklu.1.dylib")
-JLLWrappers.@declare_library_product(libldl, "@rpath/libldl.2.dylib")
-JLLWrappers.@declare_library_product(librbio, "@rpath/librbio.2.dylib")
-JLLWrappers.@declare_library_product(libspqr, "@rpath/libspqr.2.dylib")
+JLLWrappers.@declare_library_product(libamd, "@rpath/libamd.2.4.6.dylib")
+JLLWrappers.@declare_library_product(libbtf, "@rpath/libbtf.1.2.6.dylib")
+JLLWrappers.@declare_library_product(libcamd, "@rpath/libcamd.2.4.6.dylib")
+JLLWrappers.@declare_library_product(libccolamd, "@rpath/libccolamd.2.9.6.dylib")
+JLLWrappers.@declare_library_product(libcholmod, "@rpath/libcholmod.3.0.13.dylib")
+JLLWrappers.@declare_library_product(libcolamd, "@rpath/libcolamd.2.9.6.dylib")
+JLLWrappers.@declare_library_product(libklu, "@rpath/libklu.1.3.8.dylib")
+JLLWrappers.@declare_library_product(libldl, "@rpath/libldl.2.2.6.dylib")
+JLLWrappers.@declare_library_product(librbio, "@rpath/librbio.2.2.6.dylib")
+JLLWrappers.@declare_library_product(libspqr, "@rpath/libspqr.2.0.9.dylib")
 JLLWrappers.@declare_library_product(libsuitesparse_wrapper, "@rpath/libsuitesparse_wrapper.dylib")
-JLLWrappers.@declare_library_product(libsuitesparseconfig, "@rpath/libsuitesparseconfig.5.dylib")
-JLLWrappers.@declare_library_product(libumfpack, "@rpath/libumfpack.5.dylib")
+JLLWrappers.@declare_library_product(libsuitesparseconfig, "@rpath/libsuitesparseconfig.5.4.0.dylib")
+JLLWrappers.@declare_library_product(libumfpack, "@rpath/libumfpack.5.7.8.dylib")
 function __init__()
     JLLWrappers.@generate_init_header(libblastrampoline_jll)
     JLLWrappers.@init_library_product(
@@ -44,7 +44,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libcholmod,
-        "lib/libcholmod.3.0.14.dylib",
+        "lib/libcholmod.3.0.13.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
@@ -86,13 +86,13 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libsuitesparseconfig,
-        "lib/libsuitesparseconfig.5.8.1.dylib",
+        "lib/libsuitesparseconfig.5.4.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libumfpack,
-        "lib/libumfpack.5.7.9.dylib",
+        "lib/libumfpack.5.7.8.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
