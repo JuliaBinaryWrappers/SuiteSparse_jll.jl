@@ -5,7 +5,7 @@ os = "macos"
 
     [[SuiteSparse.download]]
     sha256 = "e65fa4f19231cd5c31a9d5259e156435da4cf671ab98346d5b02bfb32b2764f9"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.aarch64-apple-darwin.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.aarch64-apple-darwin.tar.gz"
 [[SuiteSparse]]
 arch = "aarch64"
 git-tree-sha1 = "40a84057778f276ce5eee1da996bfdf450e4f73b"
@@ -14,7 +14,7 @@ os = "linux"
 
     [[SuiteSparse.download]]
     sha256 = "c26f703b56bdc2a238d9baca5b60dc0cd812ab597737bc311deb7e80bc7fdb0c"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.aarch64-linux-gnu.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.aarch64-linux-gnu.tar.gz"
 [[SuiteSparse]]
 arch = "aarch64"
 git-tree-sha1 = "1151d47793a73911e9bab4834cb0b61b692de07a"
@@ -23,73 +23,73 @@ os = "linux"
 
     [[SuiteSparse.download]]
     sha256 = "5272dc947cf536ff3e1ea370887348e94a76bac83a9eda8e7eb24316fbc35426"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.aarch64-linux-musl.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.aarch64-linux-musl.tar.gz"
 [[SuiteSparse]]
 arch = "armv6l"
 call_abi = "eabihf"
-git-tree-sha1 = "79c4b0feb40e02154f34009b86969cce76030a5d"
+git-tree-sha1 = "cc0df79b0ea73886d5763a5325cfdcfe322d56c8"
 libc = "glibc"
 os = "linux"
 
     [[SuiteSparse.download]]
-    sha256 = "d196f715642283baa1bff047e5b9592e0b329ee42ce6ce4cae10714c8f9c4f93"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.armv6l-linux-gnueabihf.tar.gz"
+    sha256 = "7beff10c38f363bfda4f8153bb54f1bfee938be0e2f51cf272acc85438a2cee8"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.armv6l-linux-gnueabihf.tar.gz"
 [[SuiteSparse]]
 arch = "armv6l"
 call_abi = "eabihf"
-git-tree-sha1 = "9e63531b2f323e3bb542ed66f73bc7bb90fb6e50"
+git-tree-sha1 = "557aba845ab16f064b6136f4063da6d139500c2a"
 libc = "musl"
 os = "linux"
 
     [[SuiteSparse.download]]
-    sha256 = "3fdd7ac8c558ceaf77e34076d6290eceb59999b3cc41505df4cc692bed68268f"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.armv6l-linux-musleabihf.tar.gz"
+    sha256 = "e6e44175df8d03ecee0f60e9b8d490c7263905ad06f680a6d442d89ee5ea824f"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.armv6l-linux-musleabihf.tar.gz"
 [[SuiteSparse]]
 arch = "armv7l"
 call_abi = "eabihf"
-git-tree-sha1 = "9a0fcb10d1127e61e3f453e5626114dcd5ad2d53"
+git-tree-sha1 = "d6870e179e943541b224b7a9a7073feec37dbe28"
 libc = "glibc"
 os = "linux"
 
     [[SuiteSparse.download]]
-    sha256 = "9f1bf1e5c81b725b59611f9404ef2eb532664a3482d4c8bbcf7a18724985e135"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.armv7l-linux-gnueabihf.tar.gz"
+    sha256 = "fa785774c0f22441f9fe0160572e31c114f2c8da33815559863d4833a431961a"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.armv7l-linux-gnueabihf.tar.gz"
 [[SuiteSparse]]
 arch = "armv7l"
 call_abi = "eabihf"
-git-tree-sha1 = "6eaa1ca6d33282440aeec4a4949c82d90261c4e8"
+git-tree-sha1 = "7067b40b12730bff6319c74693d87f552b36de8b"
 libc = "musl"
 os = "linux"
 
     [[SuiteSparse.download]]
-    sha256 = "a32a6c59ff0d64742da89e90e43007626e27026b1a9711916259ab9f4c94490d"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.armv7l-linux-musleabihf.tar.gz"
+    sha256 = "cb07ab4755abf54816be2cdf76bc6d31864fd4a9471dfcbfa2d6acc6f8345be7"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.armv7l-linux-musleabihf.tar.gz"
 [[SuiteSparse]]
 arch = "i686"
-git-tree-sha1 = "cc68e4eadf764c241c04656b238695b3dbd83e55"
+git-tree-sha1 = "ae9f46a514daf4a7598faf25e89bc70ef6fb231b"
 libc = "glibc"
 os = "linux"
 
     [[SuiteSparse.download]]
-    sha256 = "23a17c04caac5c6750a4e05c5ae00d9f556e55819cc1980a58dee21c7d354955"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.i686-linux-gnu.tar.gz"
+    sha256 = "025b5ca9a6417eaf0a9e7db7cdf8b2780d8c49237d1388837f869092e5290bac"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.i686-linux-gnu.tar.gz"
 [[SuiteSparse]]
 arch = "i686"
-git-tree-sha1 = "9871d13b2a161acebf29fb3b6f9e60d1f499f63a"
+git-tree-sha1 = "2b800eed90f6a0b130097e3d227359afbb6cb626"
 libc = "musl"
 os = "linux"
 
     [[SuiteSparse.download]]
-    sha256 = "9837a1801141a7928100c5c8a950ea9a17041d54c9c3708748aae40f20b28692"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.i686-linux-musl.tar.gz"
+    sha256 = "0d644c18fbc0dc5cf735a30e1585c185fd2eda56b23fc1f036a13ad629a7132d"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.i686-linux-musl.tar.gz"
 [[SuiteSparse]]
 arch = "i686"
-git-tree-sha1 = "bdb32b192db611865235d6da765636f12fe244df"
+git-tree-sha1 = "eecbfe58f16389e8b4468b0d5b2760e7a2e696c0"
 os = "windows"
 
     [[SuiteSparse.download]]
-    sha256 = "ac001285b05788288a77d0294e5e22d596fc3b75eede5397dccb865cf633e39d"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.i686-w64-mingw32.tar.gz"
+    sha256 = "97bced599fa4eae3b8c67cc5f1d15ec6614ad8ae455f6867c7bd49bfac3f523c"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.i686-w64-mingw32.tar.gz"
 [[SuiteSparse]]
 arch = "powerpc64le"
 git-tree-sha1 = "ab489d3d2cab31d7141b44f3f0eb3af1596d8d03"
@@ -98,7 +98,7 @@ os = "linux"
 
     [[SuiteSparse.download]]
     sha256 = "72ec6450ba3f1df7b8355d4acb1c433f1c8d733b27703c14f076985d3dc81126"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.powerpc64le-linux-gnu.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.powerpc64le-linux-gnu.tar.gz"
 [[SuiteSparse]]
 arch = "x86_64"
 git-tree-sha1 = "05be8cfa84583f218622a16268496a6aff1edf42"
@@ -106,7 +106,7 @@ os = "macos"
 
     [[SuiteSparse.download]]
     sha256 = "02ceaecbbb5df8066a13bfa6304f3fcef3f5473307644f036744f323c3c645e5"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.x86_64-apple-darwin.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.x86_64-apple-darwin.tar.gz"
 [[SuiteSparse]]
 arch = "x86_64"
 git-tree-sha1 = "20d7d64c043877671b0e25f110e0e5648223754a"
@@ -115,7 +115,7 @@ os = "linux"
 
     [[SuiteSparse.download]]
     sha256 = "3d045db8760c371ba0204e4a7fcfb3fe96cb0f4785f6ea659836fc3afc8e5a55"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.x86_64-linux-gnu.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.x86_64-linux-gnu.tar.gz"
 [[SuiteSparse]]
 arch = "x86_64"
 git-tree-sha1 = "82525a781b7329ba64096fd99fe1181b15b850c0"
@@ -125,7 +125,7 @@ sanitize = "memory"
 
     [[SuiteSparse.download]]
     sha256 = "ba0031f2b4376bdfa3b3e444012412ea0a4041eb9d27c5c01363c5c62299bf3c"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.x86_64-linux-gnu-sanitize+memory.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.x86_64-linux-gnu-sanitize+memory.tar.gz"
 [[SuiteSparse]]
 arch = "x86_64"
 git-tree-sha1 = "1419373ab614d222cc74808b80591a2b0a4dcfef"
@@ -134,7 +134,7 @@ os = "linux"
 
     [[SuiteSparse.download]]
     sha256 = "2ec85859de9e87a9b21fe2fbb6ad33a1309cb90865f73dda82318e12e8456900"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.x86_64-linux-musl.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.x86_64-linux-musl.tar.gz"
 [[SuiteSparse]]
 arch = "x86_64"
 git-tree-sha1 = "42394eacbc17895702bb04fc6b0e05d56a10d37b"
@@ -142,7 +142,7 @@ os = "freebsd"
 
     [[SuiteSparse.download]]
     sha256 = "70102d2bd5cb95b649536e0afd3bafe19046511f98e04847eba91cca3bf50a32"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.x86_64-unknown-freebsd.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.x86_64-unknown-freebsd.tar.gz"
 [[SuiteSparse]]
 arch = "x86_64"
 git-tree-sha1 = "1d5373073c34e6b0769bbfc5287842060f462ab2"
@@ -150,4 +150,4 @@ os = "windows"
 
     [[SuiteSparse.download]]
     sha256 = "ee1a14b8104ba275af151983a198d324b8363e9d3ace980634b468257a681072"
-    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+2/SuiteSparse.v7.0.1.x86_64-w64-mingw32.tar.gz"
+    url = "https://github.com/JuliaBinaryWrappers/SuiteSparse_jll.jl/releases/download/SuiteSparse-v7.0.1+3/SuiteSparse.v7.0.1.x86_64-w64-mingw32.tar.gz"
