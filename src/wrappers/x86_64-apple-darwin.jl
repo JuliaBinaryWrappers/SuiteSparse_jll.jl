@@ -19,73 +19,73 @@ function __init__()
     JLLWrappers.@generate_init_header(libblastrampoline_jll)
     JLLWrappers.@init_library_product(
         libamd,
-        "lib/libamd.3.3.0.dylib",
+        "lib/libamd.3.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libbtf,
-        "lib/libbtf.2.3.0.dylib",
+        "lib/libbtf.2.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libcamd,
-        "lib/libcamd.3.3.0.dylib",
+        "lib/libcamd.3.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libccolamd,
-        "lib/libccolamd.3.3.0.dylib",
+        "lib/libccolamd.3.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libcholmod,
-        "lib/libcholmod.5.1.0.dylib",
+        "lib/libcholmod.5.1.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libcolamd,
-        "lib/libcolamd.3.3.0.dylib",
+        "lib/libcolamd.3.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libklu,
-        "lib/libklu.2.3.0.dylib",
+        "lib/libklu.2.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libldl,
-        "lib/libldl.3.3.0.dylib",
+        "lib/libldl.3.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         librbio,
-        "lib/librbio.4.3.0.dylib",
+        "lib/librbio.4.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libspqr,
-        "lib/libspqr.4.3.0.dylib",
+        "lib/libspqr.4.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libsuitesparseconfig,
-        "lib/libsuitesparseconfig.7.4.0.dylib",
+        "lib/libsuitesparseconfig.7.5.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libumfpack,
-        "lib/libumfpack.6.3.0.dylib",
+        "lib/libumfpack.6.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
