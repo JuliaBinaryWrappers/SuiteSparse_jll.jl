@@ -1,6 +1,6 @@
 name = "SuiteSparse_jll"
 uuid = "bea87d4a-7f5b-5778-9afe-8cc45184846c"
-version = "7.5.1+0"
+version = "7.6.0+0"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
