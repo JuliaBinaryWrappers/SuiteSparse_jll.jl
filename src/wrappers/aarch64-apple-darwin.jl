@@ -79,7 +79,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libsuitesparseconfig,
-        "lib/libsuitesparseconfig.7.6.0.dylib",
+        "lib/libsuitesparseconfig.7.6.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
