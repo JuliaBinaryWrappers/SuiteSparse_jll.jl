@@ -19,7 +19,7 @@ function __init__()
     JLLWrappers.@generate_init_header(libblastrampoline_jll)
     JLLWrappers.@init_library_product(
         libamd,
-        "lib/libamd.3.3.2.dylib",
+        "lib/libamd.3.3.3.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
@@ -31,31 +31,31 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libcamd,
-        "lib/libcamd.3.3.2.dylib",
+        "lib/libcamd.3.3.3.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libccolamd,
-        "lib/libccolamd.3.3.3.dylib",
+        "lib/libccolamd.3.3.4.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libcholmod,
-        "lib/libcholmod.5.2.1.dylib",
+        "lib/libcholmod.5.3.0.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libcolamd,
-        "lib/libcolamd.3.3.3.dylib",
+        "lib/libcolamd.3.3.4.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libklu,
-        "lib/libklu.2.3.3.dylib",
+        "lib/libklu.2.3.5.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
@@ -67,25 +67,25 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         librbio,
-        "lib/librbio.4.3.2.dylib",
+        "lib/librbio.4.3.4.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libspqr,
-        "lib/libspqr.4.3.3.dylib",
+        "lib/libspqr.4.3.4.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libsuitesparseconfig,
-        "lib/libsuitesparseconfig.7.7.0.dylib",
+        "lib/libsuitesparseconfig.7.8.3.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
     JLLWrappers.@init_library_product(
         libumfpack,
-        "lib/libumfpack.6.3.3.dylib",
+        "lib/libumfpack.6.3.5.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
