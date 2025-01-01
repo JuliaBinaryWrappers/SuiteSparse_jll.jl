@@ -1,6 +1,6 @@
 name = "SuiteSparse_jll"
 uuid = "bea87d4a-7f5b-5778-9afe-8cc45184846c"
-version = "7.8.3+0"
+version = "7.8.3+1"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
@@ -9,7 +9,7 @@ Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 
 [compat]
-JLLWrappers = "1.2.0"
+JLLWrappers = "1.7.0"
 julia = "1.11"
 libblastrampoline_jll = "5.8.0"
 Libdl = "< 0.0.1, 1"
