@@ -43,7 +43,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libcholmod,
-        "lib/libcholmod.5.3.0.dylib",
+        "lib/libcholmod.5.3.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
@@ -79,7 +79,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libsuitesparseconfig,
-        "lib/libsuitesparseconfig.7.8.3.dylib",
+        "lib/libsuitesparseconfig.7.10.1.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
